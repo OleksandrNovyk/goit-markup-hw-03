@@ -32,26 +32,17 @@ p {
   align-items: center;
   padding-top: 24px;
   padding-bottom: 25px;
+  padding-left: 0;
 }
 
 .header-list {
-  display: flex;
-  align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  gap: 50px;
+  margin-right: auto;
 }
 
 .list {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-.header-links {
-  display: flex;
-  margin: 0;
-  gap: 50px;
 }
 
 .link-list {
