@@ -6,10 +6,11 @@
 }
 
 body {
-  //background-color: #ffffff;
+  background-color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
+  margin: 0 auto;
 }
 
 h1,
@@ -22,21 +23,42 @@ p {
   margin: 0;
 }
 
+img {
+  display: block;
+}
+
 /*Logo*/
 .container {
   width: 1200px;
-  outline: 1px solid;
+  padding: 0 15px;
+  margin: 0 auto;
 }
-.nav-logo {
+
+.header-flex {
+  background-color: var(--main-title-color);
+  border-bottom: 1px solid #ececec;
+}
+
+.container.header {
+  display: flex;
+}
+
+.header-list .list:not(:last-child) {
+  margin-right: 50px;
+}
+
+.head-nav {
   display: flex;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 25px;
-  padding-left: 0;
 }
 
 .header-list {
-  margin-right: auto;
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .list {
@@ -58,8 +80,20 @@ p {
 }
 
 .section {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section.special {
   padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 0;
+}
+
+.header-list .list {
+  padding-top: 32px;
+  padding-bottom: 31px;
 }
 
 .main-link {
@@ -69,6 +103,8 @@ p {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+  display: block;
+  margin-right: 93px;
 }
 
 .main-link:focus,
@@ -151,17 +187,27 @@ p {
   font-weight: 400;
   line-height: 1.71;
   color: var(--secondary-title-color);
-  margin-bottom: 44px;
+  margin-bottom: 0;
 }
 .wwd {
   display: flex;
-  justify-content: space-between;
-  padding-left: 0;
-  margin: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.wwd .list {
+  width: 270px;
+}
+.wwd .list:not(:last-child) {
+  margin-right: 30px;
 }
 
 .wwd-items {
   margin: 15px;
+}
+
+.section-work .list {
+  width: 370px;
 }
 
 .our-work,
@@ -171,6 +217,12 @@ p {
   line-height: 1.16;
   color: var(--main-text-color);
   text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-work {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .team-name {
@@ -248,7 +300,7 @@ p {
   color: var(--main-title-color);
 }
 
-.low-content {
+.footer {
   background-color: #2f303a;
 }
 
@@ -288,9 +340,4 @@ p {
 .footer-logo {
   padding-top: 58px;
   padding-bottom: 20px;
-}
-
-.footer-contacts {
-  padding-top: 0;
-  padding-bottom: 62px;
 }
