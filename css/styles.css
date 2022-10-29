@@ -125,7 +125,7 @@ img {
 
 .link:hover,
 .link:focus {
-  color: #2196f3;
+  color: currentColor;
   font-weight: 500;
 }
 
@@ -139,7 +139,7 @@ img {
 
 .link-secondary:hover,
 .link-secondary:focus {
-  color: #2196f3;
+  color: currentColor;
   font-weight: 500;
 }
 
@@ -225,6 +225,33 @@ img {
   padding-bottom: 94px;
 }
 
+.section-projects {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-team {
+  background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.prof-name {
+  padding-top: 30px;
+  padding-right: 62px;
+  padding-left: 61px;
+  padding-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.description-project {
+  padding: 20px 24px;
+  background-color: var(---main-title-color);
+  border: 1px solid #eeeeee;
+}
+
 .team-name {
   font-weight: 500;
   font-size: 16px;
@@ -239,6 +266,7 @@ img {
   line-height: 1.18;
   color: var(--secondary-title-color);
   text-align: center;
+  padding-top: 10px;
 }
 
 .button {
@@ -269,7 +297,7 @@ img {
   font-weight: 700;
   min-width: 216px;
   text-align: center;
-  margin-bottom: 200px;
+  margin-bottom: 0;
 }
 
 .btn:hover,
@@ -304,12 +332,22 @@ img {
   background-color: #2f303a;
 }
 
+.footer-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-list:not(:last-child) {
+  padding-bottom: 9px;
+}
+
 .link-footer {
   color: var(--main-title-color);
   line-height: 1.71;
   font-style: normal;
   text-decoration: none;
-  background-color: #2f303a;
+  padding-bottom: 9px;
 }
 
 .link-footer:hover,
@@ -335,9 +373,18 @@ img {
 
 .footer-links {
   padding-left: 0;
+  margin: 0;
+  padding-bottom: 60px;
 }
 
 .footer-logo {
-  padding-top: 58px;
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  display: block;
+  padding-top: 60px;
   padding-bottom: 20px;
 }
