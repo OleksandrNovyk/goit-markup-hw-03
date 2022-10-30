@@ -31,14 +31,20 @@ img {
   display: block;
 }
 
-/*Logo*/
 .container {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }
 
+/*Logo*/
 .list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -66,13 +72,13 @@ img {
   margin-bottom: 0;
 }
 
-.header-list .list {
+.header-list .item {
   display: inline-block;
   padding-top: 32px;
   padding-bottom: 31px;
 }
 
-.header-list .list:not(:last-child) {
+.header-list .item:not(:last-child) {
   margin-right: 50px;
 }
 
