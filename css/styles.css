@@ -2,11 +2,13 @@
   --main-title-color: #ffffff;
   --secondary-title-color: #757575;
   --main-text-color: #212121;
+  --logo-text-color: #000000;
   --button-primary-color: #ffffff;
   --third-title-color: #2196f3;
   --footer-title-color: #2f303a;
   --hero-title-color: #2f303a;
   --section-team-color: #f5f4fa;
+  --header-border-color: #ececec;
 }
 
 body {
@@ -54,7 +56,7 @@ img {
 
 .header {
   background-color: var(--main-title-color);
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid var(--header-border-color);
 }
 
 .container.header {
@@ -93,7 +95,7 @@ img {
 }
 
 .txt-black {
-  color: #000000;
+  color: var(--logo-text-color);
 }
 
 .section {
