@@ -3,6 +3,10 @@
   --secondary-title-color: #757575;
   --main-text-color: #212121;
   --button-primary-color: #ffffff;
+  --third-title-color: #2196f3;
+  --footer-title-color: #2f303a;
+  --hero-title-color: #2f303a;
+  --section-team-color: #f5f4fa;
 }
 
 body {
@@ -54,6 +58,14 @@ img {
   align-items: center;
 }
 
+.header-list {
+  margin-left: auto;
+  align-items: center;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .header-list .list {
   display: inline-block;
   padding-top: 32px;
@@ -64,20 +76,12 @@ img {
   margin-right: 50px;
 }
 
-.header-list {
-  margin-left: auto;
-  align-items: center;
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 .link-list {
   text-decoration: none;
 }
 
 .txt-blue {
-  color: #2196f3;
+  color: var(--third-title-color);
 }
 
 .txt-black {
@@ -125,12 +129,12 @@ img {
 
 .link:hover,
 .link:focus {
-  color: #2196f3;
+  color: var(--third-title-color);
   font-weight: 500;
 }
 
 .link-secondary {
-  color: #2196f3;
+  color: var(--third-title-color);
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -139,7 +143,7 @@ img {
 
 .link-secondary:hover,
 .link-secondary:focus {
-  color: #2196f3;
+  color: var(--third-title-color);
   font-weight: 500;
 }
 
@@ -153,7 +157,7 @@ img {
 
 .link-title:hover,
 .link-title:focus {
-  color: #2196f3;
+  color: var(--third-title-color);
   font-weight: 500;
 }
 
@@ -161,7 +165,7 @@ img {
 /*Main*/
 .hero {
   text-align: center;
-  background-color: #2f303a;
+  background-color: var(--hero-title-color);
 }
 
 .hero-title {
@@ -171,7 +175,7 @@ img {
   font-size: 44px;
   line-height: 1.36;
   color: var(--main-title-color);
-  background-color: #2f303a;
+  background-color: var(--hero-title-color) a;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -248,7 +252,7 @@ img {
 }
 
 .section-team {
-  background-color: #f5f4fa;
+  background-color: var(--section-team-color);
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -299,7 +303,7 @@ img {
   cursor: pointer;
   font-family: inherit;
   color: inherit;
-  background-color: #f5f4fa;
+  background-color: var(--section-team-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -312,15 +316,15 @@ img {
 .button:hover,
 .button:focus {
   color: var(--button-primary-color);
-  background-color: #2196f3;
+  background-color: var(--third-title-color);
 }
 
 .btn {
   border-radius: 4px;
   padding: 10px 32px;
-  color: #ffffff;
-  background-color: #2196f3;
-  border: #2196f3;
+  color: var(--button-primary-color);
+  background-color: var(--third-title-color);
+  border: var(--third-title-color);
   letter-spacing: 0.06em;
   font-size: 16px;
   line-height: 1.88;
@@ -332,9 +336,9 @@ img {
 
 .btn:hover,
 .btn:focus {
-  color: #ffffff;
-  background-color: #2196f3;
-  border: #2196f3;
+  color: var(---main-title-color);
+  background-color: var(--third-title-color);
+  border: var(--third-title-color);
   opacity: 0.8;
 }
 
@@ -359,7 +363,7 @@ img {
 }
 
 .footer {
-  background-color: #2f303a;
+  background-color: var(--footer-title-color);
 }
 
 .footer-list {
