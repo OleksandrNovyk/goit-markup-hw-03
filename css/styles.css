@@ -34,6 +34,12 @@ img {
   margin: 0 auto;
 }
 
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .header-flex {
   background-color: var(--main-title-color);
   border-bottom: 1px solid #ececec;
@@ -43,28 +49,27 @@ img {
   display: flex;
 }
 
-.header-list .list:not(:last-child) {
-  margin-right: 50px;
-}
-
 .head-nav {
   display: flex;
   align-items: center;
 }
 
+.header-list .list {
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 31px;
+}
+
+.header-list .list:not(:last-child) {
+  margin-right: 50px;
+}
+
 .header-list {
-  display: flex;
   margin-left: auto;
   align-items: center;
   padding: 0;
   margin-top: 0;
   margin-bottom: 0;
-}
-
-.list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .link-list {
@@ -89,11 +94,6 @@ img {
 .section.special {
   padding-top: 94px;
   padding-bottom: 0;
-}
-
-.header-list .list {
-  padding-top: 32px;
-  padding-bottom: 31px;
 }
 
 .main-link {
@@ -125,7 +125,7 @@ img {
 
 .link:hover,
 .link:focus {
-  color: currentColor;
+  color: #2196f3;
   font-weight: 500;
 }
 
@@ -139,7 +139,7 @@ img {
 
 .link-secondary:hover,
 .link-secondary:focus {
-  color: currentColor;
+  color: #2196f3;
   font-weight: 500;
 }
 
@@ -193,6 +193,23 @@ img {
   display: flex;
   padding: 0;
   margin: 0;
+}
+
+.container-card {
+  padding-left: 297px;
+}
+
+.card-set {
+  display: flex;
+  padding-left: 0;
+  justify-content: flex-start;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.card-set :not(:last-child) {
+  margin-right: 8px;
 }
 
 .wwd .list {
@@ -252,6 +269,14 @@ img {
   border: 1px solid #eeeeee;
 }
 
+.menu {
+  margin: 0;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
 .team-name {
   font-weight: 500;
   font-size: 16px;
@@ -270,6 +295,7 @@ img {
 }
 
 .button {
+  padding: 6px 22px;
   cursor: pointer;
   font-family: inherit;
   color: inherit;
@@ -277,7 +303,11 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  border: 1px solid var(--secondary-title-color);
+  border: solid transparent;
+  border-radius: 4px;
+  text-align: center;
+  white-space: nowrap;
+  letter-spacing: 0.03em;
 }
 .button:hover,
 .button:focus {
