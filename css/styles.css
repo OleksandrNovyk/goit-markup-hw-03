@@ -41,6 +41,11 @@ img {
   margin: 0 auto;
 }
 
+.header {
+  border-bottom: 1px solid var(--header-border-color);
+  background-color: var(--main-title-color);
+}
+
 /*Logo*/
 .list {
   list-style: none;
@@ -54,13 +59,9 @@ img {
   padding: 0;
 }
 
-.header {
-  background-color: var(--main-title-color);
-  border-bottom: 1px solid var(--header-border-color);
-}
-
 .container.header {
   display: flex;
+  border-bottom: 0;
 }
 
 .head-nav {
@@ -192,6 +193,7 @@ img {
 }
 .specialities {
   font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
   color: var(--main-text-color);
   margin-bottom: 10px;
@@ -209,14 +211,10 @@ img {
   margin: 0;
 }
 
-.container-card {
-  padding-left: 297px;
-}
-
 .card-set {
   display: flex;
   padding-left: 0;
-  justify-content: flex-start;
+  justify-content: center;
   margin-left: 0;
   margin-top: 0;
   margin-bottom: 50px;
@@ -268,10 +266,7 @@ img {
 }
 
 .prof-name {
-  padding-top: 30px;
-  padding-right: 62px;
-  padding-left: 61px;
-  padding-bottom: 30px;
+  padding: 30px 0;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -298,6 +293,7 @@ img {
   line-height: 1.16;
   text-align: center;
   color: var(--main-text-color);
+  margin-bottom: 10px;
 }
 
 .team-position {
@@ -306,7 +302,6 @@ img {
   line-height: 1.18;
   color: var(--secondary-title-color);
   text-align: center;
-  padding-top: 10px;
 }
 
 .button {
@@ -323,6 +318,7 @@ img {
   text-align: center;
   white-space: nowrap;
   letter-spacing: 0.03em;
+  border: 0;
 }
 .button:hover,
 .button:focus {
@@ -359,6 +355,7 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-text-color);
+  margin-bottom: 4px;
 }
 
 .paragraph-list {
@@ -369,12 +366,24 @@ img {
 
 /*Footer*/
 
+.footer {
+  background-color: var(--footer-title-color);
+  padding: 60px 0;
+}
+
 .txt-white {
   color: var(--main-title-color);
 }
 
-.footer {
-  background-color: var(--footer-title-color);
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 20px;
 }
 
 .footer-list {
@@ -400,6 +409,7 @@ img {
   color: var(--main-title-color);
   opacity: 0.8;
 }
+
 .link-contact {
   color: var(--main-title-color);
   opacity: 0.6;
@@ -419,17 +429,4 @@ img {
 .footer-links {
   padding-left: 0;
   margin: 0;
-  padding-bottom: 60px;
-}
-
-.footer-logo {
-  font-family: "Raleway", sans-serif;
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  display: block;
-  padding-top: 60px;
-  padding-bottom: 20px;
 }
